@@ -5,11 +5,29 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  return <div className='max-h-100'>
-    <h1 className="text-3xl font-bold underline pb-[2000px]">
-      Hello world!
-    </h1>hola
-  </div>
+  return (
+    <div className='max-h-100 h-100 grid grid-flow-row'>
+      <div className='flex items-center justify-center gap-10 px-4 border border-black h-[60vh]'>
+        <div className='bg-red-300 w-[40vw] h-[30vh]'>
+          <h1 className='text-center text-3xl'>Fácil acceso</h1>
+          div
+        </div>
+        <div className='bg-green-300 w-[40vw] h-[30vh]'>
+          <h1 className='text-center text-3xl'>Información detallada</h1>
+        </div>
+      </div>
+      <div className="bg-teal-300 h-[30vh] border border-black">
+        <h1 className='text-center text-3xl'>Distintas opciones</h1>
+        <div>
+          <ul className='flex items-center justify-center gap-5'>
+            <li>pays</li>
+            <li>messages</li>
+            <li>other</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  )
   //(
   //   <main className={styles.main}>
   //     <div className={styles.description}>

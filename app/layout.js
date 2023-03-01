@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <SideBar />
-        <main className='ml-20 w-8/10 h-screen max-h-screen'>
+        <main className='pl-20 w-8/10 h-screen max-h-screen'>
           <Nav />
           <div className='max-h-full overflow-y-scroll pt-10'>
             {children}

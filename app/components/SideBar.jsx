@@ -6,36 +6,18 @@ import Finances from '@/public/icons/finances.svg'
 import Login from '@/public/icons/login.svg'
 import Search from '@/public/icons/search.svg'
 
-const items = [
-    {
-        label: "Search",
-        route: "/search",
-        icon: ''
-    },
-    {
-        label: "Finances",
-        route: "/finances",
-        icon: ''
-    },
-    {
-        label: "Auth",
-        route: "/auth",
-        icon: ''
-    },
-]
-
 function SideBar() {
     return (
         <div className="flex">
             <div className='fixed w-20 h-screen p-4 bg-teal-200  flex flex-col justify-between'>
                 <div className="flex flex-col items-center">
                     <Link href={'/'}>
-                        <div className='bg-blue-600 text-white p-3 rounded-lg inline-block hover:scale-110'>
+                        <div className='bg-blue-600 text-white p-3 rounded-lg inline-block scale-110'>
                             <Image src={Logo} />
                         </div>
                     </Link>
                     <span className='border-b-[2px] border-white w-full p-2'></span>
-                    <Link href={'/'}>
+                    <Link href={'/search'}>
                         <div className='bg-blue-400 hover:bg-blue-200 cursor-pointer my-4 p-3 rounded-lg inline-block hover:scale-110'>
                             <Image src={Search} />
                         </div>
