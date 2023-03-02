@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from '@/styles/nav.module.css'
 
 function Nav() {
     return (
-        <div className='w-full shadow-md flex justify-center fixed h-10 z-10'>
-            <h1 className='text-4xl font-bold'>Rifas</h1>
+        <div className={styles.nav}>
+            <h1>Rifas</h1>
         </div>
     )
 }

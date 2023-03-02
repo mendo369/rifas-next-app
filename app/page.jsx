@@ -1,29 +1,41 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-// import styles from './page.module.css'
+import Whatsapp from '@/public/icons/whatsapp.svg'
+import Orbit from '@/public/icons/orbit.svg'
+import Money from '@/pubic/icons/'
 
+import styles from '@/styles/home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className='max-h-100 h-100 grid grid-flow-row'>
-      <div className='flex items-center justify-center gap-10 px-4 border border-black h-[60vh]'>
-        <div className='bg-red-300 w-[40vw] h-[30vh]'>
+    <div className={styles.container}>
+      <div className={styles.info}>
+        <div className={styles.info_item}>
           <h1 className='text-center text-3xl'>Fácil acceso</h1>
-          div
+          <div className={styles.rifa_example}>
+            tabla de ejmplo
+          </div>
         </div>
-        <div className='bg-green-300 w-[40vw] h-[30vh]'>
+        <div className={styles.info_item}>
           <h1 className='text-center text-3xl'>Información detallada</h1>
+          <div className={styles.rifa_example}>
+            tabla de ejmplo
+          </div>
         </div>
       </div>
-      <div className="bg-teal-300 h-[30vh] border border-black">
+      <div className={styles.options}>
         <h1 className='text-center text-3xl'>Distintas opciones</h1>
-        <div>
-          <ul className='flex items-center justify-center gap-5'>
-            <li>pays</li>
-            <li>messages</li>
-            <li>other</li>
-          </ul>
+        <div className={styles.options_list}>
+          <div className={styles.orbit}>
+            <Image src={Orbit} width={70} />
+          </div>
+          <div className={styles.whatsapp}>
+            <Image src={Whatsapp} width={70} />
+          </div>
+          <div className={styles.whatsapp}>
+            <Image src={Whatsapp} width={70} />
+          </div>
         </div>
       </div>
     </div>
